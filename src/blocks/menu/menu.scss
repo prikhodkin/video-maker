@@ -1,25 +1,33 @@
 .menu__btn {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  font-size: 0;
-  width: 30px;
-  height: 30px;
-  border: none;
+  position: relative;
+  z-index: 110;
+  width: 29px;
+  height: 18px;
   padding: 0;
+  font-size: 0;
+  background: transparent;
+  border: none;
   cursor: pointer;
+  appearance: none;
+
+  &:focus {
+    opacity: 0.4;
+  }
 }
 
 .menu__hamburger {
-  display: block;
   position: relative;
-  height: 2px;
+  display: block;
+  height: 4px;
   background-color: #000000;
   transition: all 0.3s;
-  &::before, &::after {
+
+  &::before,
+  &::after {
     content: "";
-    display: block;
     position: absolute;
     left: 0;
+    display: block;
     width: 100%;
     height: inherit;
     background-color: #000000;
@@ -27,21 +35,111 @@
   }
 
   &::before {
-    top: -8px;
+    top: -7px;
   }
+
   &::after {
-    bottom: -8px;
+    bottom: -7px;
   }
 
   &--active {
     background-color: transparent;
+
     &::before {
       top: 0;
       transform: rotate(45deg);
     }
+
     &::after {
       bottom: 0;
       transform: rotate(-45deg);
     }
+  }
+}
+
+.menu__list {
+  @include vh-check;
+  @include list-reset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 19%;
+  background-image: url("../../img/promo__bg--mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  opacity: 0;
+  transition: all 0.3s;
+
+  &--show {
+    z-index: 100;
+    opacity: 1;
+  }
+}
+
+.menu__item {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 10%;
+  }
+}
+
+.menu__link {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: $black;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    //font-weight: 700;
+    border-color: $black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu__btn {
+    display: none;
+  }
+
+  .menu__list {
+    position: relative;
+    z-index: 10;
+    flex-direction: row;
+    height: unset;
+    padding: 0;
+    background: unset;
+    opacity: 1;
+  }
+
+  .menu__item {
+    width: unset;
+
+    &:not(:last-child) {
+      margin-right: 28px;
+      margin-bottom: 0;
+    }
+  }
+
+  .menu__link {
+    padding: 17px;
   }
 }

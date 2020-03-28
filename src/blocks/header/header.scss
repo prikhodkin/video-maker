@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px 30px;
+}
+
+.header__menu {
+  margin-top: -10px;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 35px;
+  }
+
+  .header__menu {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header {
+    padding-right: 208px;
+    padding-left: 208px;
+  }
+}

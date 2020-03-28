@@ -3,3 +3,17 @@ body {
   font-family: $main-font;
   color: $grey;
 }
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: unset;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}

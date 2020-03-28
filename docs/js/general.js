@@ -24,13 +24,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+$('.menu__list').removeClass('menu__list--show');
 $('.menu__btn').click(function () {
   $('.menu__hamburger').toggleClass('menu__hamburger--active');
+  $('.menu__list').toggleClass('menu__list--show');
 });
-
-var test = function test() {
-  console.log('test');
-};
 
 (function () {
   vhCheck({
