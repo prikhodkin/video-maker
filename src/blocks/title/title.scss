@@ -10,6 +10,13 @@
     //line-height: 29px;
     letter-spacing: 0.02em;
   }
+
+  &--center {
+    @include fluidFontSize(24px, 48px, 320px, 1920px, 18px);
+    color: $black;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
 }
 
 .title__transparent {
