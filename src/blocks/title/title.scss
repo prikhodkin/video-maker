@@ -1,5 +1,38 @@
 .title {
+  margin: 0;
   font-weight: 800;
   font-family: $second-font;
+
+  &--header {
+    @include fluidFontSize(24px, 48px, 320px, 1920px, 18px);
+    color: $black;
+    //font-size: 24px;
+    //line-height: 29px;
+    letter-spacing: 0.02em;
+  }
 }
 
+.title__transparent {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $black;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .title {
+    &--header {
+      //font-size: 48px;
+      //line-height: 59px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .title__transparent {
+    &:hover {
+      color: #ffffff;
+      -webkit-text-stroke: unset;
+    }
+  }
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Template v.2.0.</title>
+  <title>Видео-Художник</title>
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons//apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicons//apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
@@ -25,14 +25,42 @@
 
 </head>
 <body>
+  <header class="header">
+    <picture class="header__logo logo logo--header">
+      <source srcset="img/logo.webp" type="image/webp">
+      <img src="img/logo.png" alt="logo">
+    </picture>
+    <nav class="menu header__menu">
+      <button class="menu__btn">
+        <span class="menu__hamburger">Открыть меню</span>
+      </button>
+      <ul class="menu__list menu__list--show">
+        <li class="menu__item">
+          <a href="" class="menu__link">О курсе</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">Программа курса</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">Отзывы</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">О авторе</a>
+        </li>
+        <li class="menu__item">
+          <a href="" class="menu__link">Тарифы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <div data-controller="hello">
-      <input data-target="hello.name" type="text">
-    
-      <button data-action="click->hello#greet">Greet</button>
-    
-      <span data-target="hello.output"></span>
-    </div>
+    <section class="promo">
+      <h1 class="promo__title title title--header">Научись снимать <span class="title__transparent"> профессиональные</span>  видео за 12 недель!</h1>
+      <p class="promo__txt">Узнай более 100 техник и секретов профессиональной съемки и монтажа от <b>Артема Гавра</b></p>
+      <a href="" class="button button--dark button--shadow promo__button">
+        <span class="button__text button__text--arrow">Получить курс</span>
+      </a>
+    </section>
   </main>
   <script src="js/libs.js"></script>
   <script src="js/general.js"></script>
