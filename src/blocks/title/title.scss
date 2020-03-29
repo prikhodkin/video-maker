@@ -13,9 +13,18 @@
 
   &--center {
     @include fluidFontSize(24px, 48px, 320px, 1920px, 18px);
+    text-align: center;
     color: $black;
     letter-spacing: 0.02em;
-    text-align: center;
+  }
+
+  &--color {
+    @include fluidFontSize(18px, 24px, 320px, 1920px, 18px);
+    color: transparent;
+    letter-spacing: 0.02em;
+    text-shadow: 0 4px 14px rgba(254, 210, 48, 0.4);
+    background: $g-orange;
+    background-clip: text;
   }
 }
 
