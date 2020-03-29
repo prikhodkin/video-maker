@@ -26,6 +26,12 @@
     background: $g-orange;
     background-clip: text;
   }
+
+  &--small {
+    @include fluidFontSize(24px, 36px, 320px, 1920px, 18px);
+    color: #000000;
+    letter-spacing: 0.02em;
+  }
 }
 
 .title__transparent {
