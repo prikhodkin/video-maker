@@ -1,0 +1,146 @@
+.add {
+  padding: 0 15px 40px 15px;
+}
+
+.add__title {
+  margin-bottom: 80px;
+}
+
+.add__list {
+  @include list-reset;
+  margin: 0;
+}
+
+.add__sub-title {
+  margin: 0 0 20px 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $second-font;
+  text-align: center;
+  color: $black;
+  letter-spacing: 0.02em;
+}
+
+.add__desc {
+  position: relative;
+  z-index: 100;
+  box-sizing: border-box;
+  max-width: 285px;
+  min-height: 56px;
+  margin: 0 auto;
+  margin-bottom: -56px;
+  padding: 20px;
+  padding-top: 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: rgba(77, 77, 77, 0.6);
+  letter-spacing: 0.01em;
+  background: #ffffff;
+  border: 4px solid  #fed230;
+  border-top: unset;
+  border-radius: 0 0 25px 25px;
+}
+
+.add__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #000000;
+  letter-spacing: 0.02em;
+}
+
+.add__content {
+  padding: 80px 15px 30px 15px;
+  background: #ffffff;
+  border: 4px solid #fed230;
+  border-radius: 10px;
+}
+
+.add__txt {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+}
+
+.add__item {
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+.add__sub-list {
+  @include list-reset;
+  margin: 0;
+}
+
+.add__sub-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .add {
+    padding-bottom: 80px;
+  }
+
+  .add__title {
+    margin-bottom: 100px;
+  }
+
+  .add__sub-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .add__desc {
+    max-width: 484px;
+    min-height: 61px;
+    margin-bottom: -61px;
+    padding-bottom: 41px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .add__content {
+    position: relative;
+    padding: 170px 95px 95px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 50%;
+      border: 10px;
+      box-shadow: 0 31px 64px rgba(205, 149, 5, 0.11);
+    }
+  }
+
+  .add__sub-list {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .add__sub-item {
+    width: 50%;
+    padding-right: 30px;
+
+    &--full {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .add {
+    padding-right: 115px;
+    padding-left: 115px;
+  }
+}
