@@ -1,7 +1,12 @@
 "use strict"
 
 import gulp from "gulp";
-
+const ghPages = require('gh-pages');
+const path = require('path');
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './docs'), cb);
+}
+exports.deploy = deploy;
 
 const requireDir = require("require-dir"),
     paths = {
@@ -56,7 +61,7 @@ const requireDir = require("require-dir"),
         webp: {
           src: ["./src/img/**/*.{jpg,jpeg,png,gif}", "!./src/img/svg/icons/*", "!./src/img/favicons/*.{jpg,jpeg,png,gif,svg}"],
           dest: "./docs/img/",
-          watch: "src/img/**/*" 
+          watch: "src/img/**/*"
         }
 
     };
@@ -72,7 +77,7 @@ gulp.task('dev',
 ));
 
 gulp.task('build',
-  gulp.series('clean','sprite', 
+  gulp.series('clean','sprite',
     gulp.parallel('sass:min','html','scripts:min','scripts-lib:min','images:min','favicons','fonts', 'webp'),
     gulp.series('hash')
   ));
