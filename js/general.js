@@ -23,4 +23,12 @@ if (window.matchMedia('(max-width: 1199px)').matches) {
     nextArrow: '.program__button--next'
   });
 }
+
+if (window.matchMedia('(max-width: 1199px)').matches) {
+  $('.gallery__list').slick({
+    centerMode: true,
+    centerPadding: '30px',
+    arrows: false
+  });
+}
 //# sourceMappingURL=maps/general.js.map
