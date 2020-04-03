@@ -1,0 +1,140 @@
+.whom {
+  padding: 100px 15px;
+}
+
+.whom__title {
+  margin-bottom: 80px;
+}
+
+.whom__list {
+  @include list-reset;
+  margin: 0;
+}
+
+.whom__header {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 30px 15px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+}
+
+.whom__item {
+  padding: 80px 15px 30px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
+  &--left {
+    background-image: url("../../img/whom__bg--left.png");
+  }
+
+  &--right {
+    background-image: url("../../img/whom__bg--right.png");
+  }
+}
+
+.whom__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+}
+
+.whom__content {
+  padding-top: 37px;
+
+  .whom__text {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .whom {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .whom__header {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 24px;
+    line-height: 29px;
+
+    span {
+      display: inline-block;
+      max-width: 450px;
+    }
+  }
+
+  .whom__content {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .whom__item {
+    width: calc(50% - 10px);
+    padding-right: 0;
+    padding-bottom: 60px;
+    padding-left: 0;
+
+    &--left {
+      background-position: right;
+    }
+
+    &--right {
+      background-position: left;
+    }
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .whom__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .whom {
+    padding-top: 140px;
+    padding-bottom: 0;
+  }
+
+  .whom__title {
+    margin-bottom: 100px;
+  }
+
+  .whom__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: 1500px) {
+  .whom__content {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
+  .whom__header {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
+  .whom__item {
+    max-width: 857px;
+  }
+}
