@@ -12,9 +12,6 @@ gulp.task("images", ()=> {
         .pipe(plumber())
         .pipe(newer(paths.images.dest))
         .pipe(gulp.dest(paths.images.dest))
-        .pipe(browserSync.reload({
-            stream: true
-          }))
 });
 
 gulp.task("images:min", () => {
