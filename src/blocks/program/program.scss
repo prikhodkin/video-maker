@@ -177,7 +177,7 @@
     }
 
     &:nth-child(8) {
-      margin-top: -518px;
+      margin-top: -540px;
     }
 
     &:nth-child(9) {
@@ -186,7 +186,7 @@
 
     &:nth-child(10) {
       align-self: stretch;
-      margin-top: -354px;
+      margin-top: -356px;
       border-bottom: none;
     }
   }
@@ -198,6 +198,15 @@
 
   .program__control {
     display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .program__item {
+
+    &:nth-child(8) {
+      margin-top: -518px;
+    }
   }
 }
 

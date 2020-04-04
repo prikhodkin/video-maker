@@ -28,9 +28,7 @@
 
     &:hover,
     &:focus {
-      margin-right: -9px;
-      margin-left: -9px;
-      font-size: 18px;
+      transform: scale(1.03);
     }
 
     &:active {
@@ -66,6 +64,9 @@
   &--green {
     &::before {
       background-color: $green;
+    }
+    &::after {
+      display: none;
     }
   }
 }
