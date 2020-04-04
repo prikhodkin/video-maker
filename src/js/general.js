@@ -4,3 +4,4 @@
 //= "../blocks/gallery/gallery.js"
 //= "../blocks/write/write.js"
 //= "../blocks/instagram/instagram.js"
+//= "../blocks/reviews/reviews.js"
