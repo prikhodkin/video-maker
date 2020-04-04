@@ -3,3 +3,4 @@
 //= "../blocks/program/program.js"
 //= "../blocks/gallery/gallery.js"
 //= "../blocks/write/write.js"
+//= "../blocks/instagram/instagram.js"
