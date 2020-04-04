@@ -31,4 +31,46 @@ if (window.matchMedia('(max-width: 1199px)').matches) {
     arrows: false
   });
 }
+
+$('.write__list').slick({
+  centerMode: false,
+  centerPadding: '0',
+  slidesToShow: 8,
+  responsive: [{
+    breakpoint: 900,
+    settings: {
+      arrows: false,
+      centerMode: true,
+      centerPadding: '100px',
+      slidesToShow: 3
+    }
+  }, {
+    breakpoint: 480,
+    settings: {
+      arrows: false,
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 1
+    }
+  }]
+});
+
+if (window.matchMedia('(max-width: 1199px)').matches) {
+  $('.reviews__list').slick({
+    centerMode: true,
+    centerPadding: '30px',
+    arrows: false
+  });
+}
+
+$(function () {
+  $("a[href^='#']").click(function () {
+    var _href = $(this).attr("href");
+
+    $("html, body").animate({
+      scrollTop: $(_href).offset().top + "px"
+    });
+    return false;
+  });
+});
 //# sourceMappingURL=maps/general.js.map

@@ -1,14 +1,1 @@
-<svg width="208" height="218" viewBox="0 0 208 218" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M81 162C125.735 162 162 125.735 162 81C162 36.2649 125.735 0 81 0C36.2649 0 0 36.2649 0 81C0 125.735 36.2649 162 81 162ZM81 125C105.301 125 125 105.301 125 81C125 56.6995 105.301 37 81 37C56.6995 37 37 56.6995 37 81C37 105.301 56.6995 125 81 125Z" fill="url(#paint0_linear)"/>
-<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M152.5 218C183.152 218 208 193.152 208 162.5C208 131.848 183.152 107 152.5 107C121.848 107 97 131.848 97 162.5C97 193.152 121.848 218 152.5 218ZM152.5 186C165.479 186 176 175.479 176 162.5C176 149.521 165.479 139 152.5 139C139.521 139 129 149.521 129 162.5C129 175.479 139.521 186 152.5 186Z" fill="url(#paint1_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="20" y1="38.5" x2="139" y2="127" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FED230"/>
-<stop offset="1" stop-color="#FED230" stop-opacity="0"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="97" y1="162" x2="225.5" y2="173.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FED230"/>
-<stop offset="1" stop-color="#FED230" stop-opacity="0"/>
-</linearGradient>
-</defs>
-</svg>
+<svg width="208" height="218" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" fill-rule="evenodd" clip-rule="evenodd" d="M81 162c44.735 0 81-36.265 81-81S125.735 0 81 0 0 36.265 0 81s36.265 81 81 81zm0-37c24.301 0 44-19.699 44-44 0-24.3-19.699-44-44-44-24.3 0-44 19.7-44 44 0 24.301 19.7 44 44 44z" fill="url(#paint0_linear)"/><path opacity=".3" fill-rule="evenodd" clip-rule="evenodd" d="M152.5 218c30.652 0 55.5-24.848 55.5-55.5S183.152 107 152.5 107 97 131.848 97 162.5s24.848 55.5 55.5 55.5zm0-32c12.979 0 23.5-10.521 23.5-23.5S165.479 139 152.5 139 129 149.521 129 162.5s10.521 23.5 23.5 23.5z" fill="url(#paint1_linear)"/><defs><linearGradient id="paint0_linear" x1="20" y1="38.5" x2="139" y2="127" gradientUnits="userSpaceOnUse"><stop stop-color="#FED230"/><stop offset="1" stop-color="#FED230" stop-opacity="0"/></linearGradient><linearGradient id="paint1_linear" x1="97" y1="162" x2="225.5" y2="173.5" gradientUnits="userSpaceOnUse"><stop stop-color="#FED230"/><stop offset="1" stop-color="#FED230" stop-opacity="0"/></linearGradient></defs></svg>
