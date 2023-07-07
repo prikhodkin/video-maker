@@ -49,7 +49,7 @@
     "require-dir": "^1.2.0",
     "slick-carousel": "^1.8.1",
     "stimulus": "^1.1.1",
-    "stylelint": "^12.0.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-htmlacademy": "^0.1.4",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.0.0",
